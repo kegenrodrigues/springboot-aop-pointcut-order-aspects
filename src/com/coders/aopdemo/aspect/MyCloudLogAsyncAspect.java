@@ -6,11 +6,11 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-public class MyDemoLoggingAspect {
+public class MyCloudLogAsyncAspect {
 
 	@Before("forDaoPackageNoGettersAndSetters()")
-	public void runBeforeAddAccount() {
-		System.out.println("Buddy we are in the logging Aspect. runBeforeAddAccount");
+	public void logToCloudSync() {
+		System.out.println("Buddy we are in the logging Aspect. logging to cloud in async fashion");
 	}
-		
+	
 }

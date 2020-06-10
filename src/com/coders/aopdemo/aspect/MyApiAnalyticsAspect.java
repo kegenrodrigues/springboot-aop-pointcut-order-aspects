@@ -6,11 +6,11 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-public class MyDemoLoggingAspect {
+public class MyApiAnalyticsAspect {
 
 	@Before("forDaoPackageNoGettersAndSetters()")
-	public void runBeforeAddAccount() {
-		System.out.println("Buddy we are in the logging Aspect. runBeforeAddAccount");
+	public void myApiAnalytics() {
+		System.out.println("Buddy we are in the logging Aspect. myApiAnalytics going on");
 	}
-		
+	
 }
